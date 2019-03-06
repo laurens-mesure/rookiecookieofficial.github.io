@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Rookie Cookie</title>
+	<!-- CSS files -->
+	<link rel="stylesheet" type="text/css" href="CSS/fullpage.css" />
+	<link rel="stylesheet" type="text/css" href="CSS/styles.css" />
+	
+	<!-- jqeury library & fullpage.js -->
+	<script type="text/javascript" src="javascript/fullpage.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		function alerting(){
+			alert('deze functie werkt nog niet, stuur in tussen tijd een berichtje naar 0470 55 55 05 met de gewenste koeken :)')
+		}
+	</script>
+</head>
+
+<body>
+	<div id="fullpage">
+		<div id="header">
+			<h1>Rookie Cookie</h1>
+			
+			<img class="menu" src="img/menu.png" alt="menu" />
+		</div>
+		<div class="fp-section" id="section0">
+			<div class="fp-slide slide1">
+				<h3 class="title">Plop Koeken</h3>
+				<h3 class="price">€0,30</h3>
+				<div class="image-container">
+					<img class="artikel" src="img/plop_koeken.png" alt="Plopkoeken" />
+				</div>
+				<div class="koop-container">
+					<a class="koop" onclick="alerting()" href="#">Koop nu!</a>
+				</div>
+			</div>
+			<div class="fp-slide slide2">
+				<h3 class="title">Lu Mikado</h3>
+				<h3 class="price">€2,00</h3>
+				<div class="image-container">
+					<img class="artikel" src="img/mikado.png" alt="Lu Mikado" />
+				</div>
+				<div class="koop-container">
+					<a class="koop" onclick="alerting()" href="#">Koop nu!</a>
+				</div>
+			</div>
+			<div class="fp-slide slide3">
+				<h3 class="title">Prince Start <br />Naturel</h3>
+				<h3 class="price">€0,50</h3>
+				<div class="image-container">
+					<img class="artikel" src="img/prince_start.png" alt="Prince Start Naturel" />
+				</div>
+				<div class="koop-container">
+					<a class="koop" onclick="alerting()" href="#">Koop nu!</a>
+				</div>
+			</div>
+			<div class="fp-slide slide4">
+				<h3 class="title">Haribo Goudberen</h3>
+				<h3 class="price">€0,20</h3>
+				<div class="image-container">
+					<img class="artikel" src="img/goudberen.png" alt="Haribo Goudberen" />
+				</div>
+				<div class="koop-container">
+					<a class="koop" onclick="alerting()" href="#">Koop nu!</a>
+				</div>
+			</div>
+			<div class="fp-slide slide5">
+				<h3 class="title">Mentos Bubble Fresh</h3>
+				<h3 class="price">€2,00</h3>
+				<div class="image-container">
+					<img class="artikel" src="img/bubblegum.png" alt="Mentos Bubble Fresh" />
+				</div>
+				<div class="koop-container">
+					<a class="koop" onclick="alerting()" href="#">Koop nu!</a>
+				</div>
+			</div>
+			<div class="fp-slide slide6">
+				<h3 class="title">Lu Cent Wafers</h3>
+				<h3 class="price">€0,65</h3>
+				<div class="image-container">
+					<img class="artikel" src="img/cent_wafers.png" alt="Lu Cent Wafers" />
+				</div>
+				<div class="koop-container">
+					<a class="koop" onclick="alerting()" href="#">Koop nu!</a>
+				</div>
+			</div>
+			<div class="fp-slide slide7">
+				<h3 class="title">Dinosaurus Koeken<br />per pak</h3>
+				<h3 class="price">€2,30</h3>
+				<div class="image-container">
+					<img class="artikel" src="img/dino.png" alt="Dinosaurus Koeken" />
+				</div>
+				<div class="koop-container">
+					<a class="koop" onclick="alerting()" href="#">Koop nu!</a>
+				</div>
+			</div>
+			<div class="fp-slide slide8">
+				<h3 class="title">Prince Start <br />Chocolade</h3>
+				<h3 class="price">€0,50</h3>
+				<div class="image-container">
+					<img class="artikel" src="img/prince_start_choc.png" alt="Prince Start Choc" />
+				</div>
+				<div class="koop-container">
+					<a class="koop" onclick="alerting()" href="#">Koop nu!</a>
+				</div>
+			</div>
+			<div class="fp-slide slide9">
+				<h3 class="title">Lulu Beertje<br />Aardbeien</h3>
+				<h3 class="price">€2,00</h3>
+				<div class="image-container">
+					<img class="artikel" src="img/lulu.png" alt="Lulu Beertje Aardbeien" />
+				</div>
+				<div class="koop-container">
+					<a class="koop" onclick="alerting()" href="#">Koop nu!</a>
+				</div>
+			</div>
+			<div class="fp-slide slide10">
+				<h3 class="title">Lulu Beertje<br />Melk</h3>
+				<h3 class="price">€2,00</h3>
+				<div class="image-container">
+					<img class="artikel" src="img/lulu_choc.png" alt="Lulu Beertje Melk" />
+				</div>
+				<div class="koop-container">
+					<a class="koop" onclick="alerting()" href="#">Koop nu!</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+		//Navigation
+		showActiveTooltip: false,
+		slidesNavigation: true,
+		slidesNavPosition: 'bottom',
+
+		//Scrolling
+		css3: true,
+		scrollingSpeed: 700,
+		autoScrolling: true,
+		fitToSection: true,
+		loopHorizontal: true,
+		continuousHorizontal: true,
+		scrollHorizontally: true,
+	});
+</script>
+</body>
+</html>

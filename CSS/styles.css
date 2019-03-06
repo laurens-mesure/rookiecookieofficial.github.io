@@ -1,0 +1,159 @@
+@font-face {font-family: cookies; src: url(../fonts/Cookies.ttf)}
+@font-face {font-family: caviar; src: url(../fonts/CaviarDreams.ttf)}
+
+@media (max-width:768px)  { 
+	#header h1{
+		font-size: 8vw!important;
+	}
+	
+	.menu{
+		height: 2vh;
+	}
+	
+	.title{
+		font-size: 10vw!important;
+		max-width: 60vw!important;
+	}
+	
+	.price{
+		font-size: 10vw!important;
+		margin-left: 55vw!important;
+	}
+	
+	.artikel{
+		width: 50vw!important;
+	}
+	
+	.fp-controlArrow.fp-next {
+    	right: 0px!important;
+	}
+	
+	.koop{
+		font-size: 8vw!important;
+	}
+}
+
+.fp-slidesNav{
+	text-align: center;
+}
+
+#header{
+	position: fixed;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	background-color: white;
+	width: 100vw;
+}
+
+#header h1{
+	text-align: left;
+	float: left;
+	padding-left: 5vw;
+	font-family: cookies;
+	font-size: 2.5vw;
+	color: #555555;
+}
+
+#header img{
+	float: right;
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 4vh 5vh;
+}
+
+.title{
+	position: absolute;
+	top: 0;
+	padding-left: 5vw;
+	font-family: caviar;
+	font-size: 5vw;
+	color: white;
+	padding-top: 10vh;
+	
+}
+
+.price{
+	font-family: caviar;
+	color: white;
+	font-size: 5vw;
+	float: right;
+	display: inline;
+	position: absolute;
+	margin-left:70vw;
+	transform: translateX(50%);
+	top: 0;
+	padding-top: 10vh;
+}
+
+.image-container{
+	width: 100vw;
+	text-align: center;
+}
+
+.artikel{
+	padding-top: 20vh;
+	display: inline-block;
+	margin-bottom: 8vh;
+}
+
+.koop-container{
+	width: 100vw;
+	text-align: center;
+}
+
+.koop{
+	color: white;
+	text-decoration: none;
+	font-family: caviar;
+	font-size: 2.5vw;
+	border: 3px solid white;
+	margin-bottom: -8vh;
+	display: inline-block;
+	padding: 10px;
+	transition: .3s;
+}
+
+.koop:hover{
+	background-color: white;
+	color: black;
+	transition: .3s;
+	
+}
+
+#section0{
+}
+
+.slide1{
+	background-color: #1abc9c;
+}
+.slide2{
+	background-color: #2ecc71;
+}
+.slide3{
+	background-color: #3498db;
+}
+.slide4{
+	background-color: #9b59b6;
+}
+.slide5{
+	background-color: #e67e22;
+}
+.slide6{
+	background-color: #f1c40f;
+}
+.slide7{
+	background-color: #34495e;
+}
+.slide8{
+	background-color: #81ecec;
+}
+.slide9{
+	background-color: #a29bfe;
+}
+.slide10{
+	background-color: #fab1a0;
+}
+
+
