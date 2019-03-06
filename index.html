@@ -3,6 +3,8 @@
 <head>
 <meta charset="utf-8">
 <title>Rookie Cookie</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
 	<!-- CSS files -->
 	<link rel="stylesheet" type="text/css" href="CSS/fullpage.css" />
 	<link rel="stylesheet" type="text/css" href="CSS/styles.css" />
@@ -11,8 +13,23 @@
 	<script type="text/javascript" src="javascript/fullpage.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script>
+		var i = 0;
+		
 		function alerting(){
 			alert('deze functie werkt nog niet, stuur in tussen tijd een berichtje naar 0470 55 55 05 met de gewenste koeken :)')
+		}
+		
+		function menu(){
+			if(i === 0){
+				$(".menu-page").fadeIn(500);
+				$(".menu").attr("src", "img/menu_white.png");
+				i = 1;
+			}
+			else if(i === 1){
+				$(".menu-page").fadeOut(500);
+				$(".menu").attr("src", "img/menu.png");
+				i = 0;
+			}
 		}
 	</script>
 </head>
@@ -22,7 +39,13 @@
 		<div id="header">
 			<h1>Rookie Cookie</h1>
 			
-			<img class="menu" src="img/menu.png" alt="menu" />
+			<a onClick="menu()" href="#"><img class="menu" src="img/menu.png" alt="menu" /></a>
+			<div class="menu-page">
+				<div class="menu-text">
+					<a onClick="alerting()" href="#"><h3>Contact</h3></a>
+					<a onClick="alerting()" href="#"><h3>Help!</h3></a>
+				</div>
+			</div>
 		</div>
 		<div class="fp-section" id="section0">
 			<div class="fp-slide slide1">
@@ -39,7 +62,7 @@
 				<h3 class="title">Lu Mikado</h3>
 				<h3 class="price">€2,00</h3>
 				<div class="image-container">
-					<img class="artikel" src="img/mikado.png" alt="Lu Mikado" />
+					<img class="artikel height-fix" src="img/mikado.png" alt="Lu Mikado" />
 				</div>
 				<div class="koop-container">
 					<a class="koop" onclick="alerting()" href="#">Koop nu!</a>
@@ -49,7 +72,7 @@
 				<h3 class="title">Prince Start <br />Naturel</h3>
 				<h3 class="price">€0,50</h3>
 				<div class="image-container">
-					<img class="artikel" src="img/prince_start.png" alt="Prince Start Naturel" />
+					<img class="artikel height-fix" src="img/prince_start.png" alt="Prince Start Naturel" />
 				</div>
 				<div class="koop-container">
 					<a class="koop" onclick="alerting()" href="#">Koop nu!</a>
@@ -99,14 +122,14 @@
 				<h3 class="title">Prince Start <br />Chocolade</h3>
 				<h3 class="price">€0,50</h3>
 				<div class="image-container">
-					<img class="artikel" src="img/prince_start_choc.png" alt="Prince Start Choc" />
+					<img class="artikel height-fix" src="img/prince_start_choc.png" alt="Prince Start Choc" />
 				</div>
 				<div class="koop-container">
 					<a class="koop" onclick="alerting()" href="#">Koop nu!</a>
 				</div>
 			</div>
 			<div class="fp-slide slide9">
-				<h3 class="title">Lulu Beertje<br />Aardbeien</h3>
+				<h3 class="title">Lulu Beertje<br />Aardbeien<br />per pak</h3>
 				<h3 class="price">€2,00</h3>
 				<div class="image-container">
 					<img class="artikel" src="img/lulu.png" alt="Lulu Beertje Aardbeien" />
@@ -116,7 +139,7 @@
 				</div>
 			</div>
 			<div class="fp-slide slide10">
-				<h3 class="title">Lulu Beertje<br />Melk</h3>
+				<h3 class="title">Lulu Beertje<br />Melk<br />per pak</h3>
 				<h3 class="price">€2,00</h3>
 				<div class="image-container">
 					<img class="artikel" src="img/lulu_choc.png" alt="Lulu Beertje Melk" />
@@ -141,8 +164,6 @@
 		autoScrolling: true,
 		fitToSection: true,
 		loopHorizontal: true,
-		continuousHorizontal: true,
-		scrollHorizontally: true,
 	});
 </script>
 </body>

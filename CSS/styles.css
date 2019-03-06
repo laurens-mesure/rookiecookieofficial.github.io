@@ -1,7 +1,7 @@
 @font-face {font-family: cookies; src: url(../fonts/Cookies.ttf)}
 @font-face {font-family: caviar; src: url(../fonts/CaviarDreams.ttf)}
 
-@media (max-width:768px)  { 
+@media only screen and (max-width: 1024px){
 	#header h1{
 		font-size: 8vw!important;
 	}
@@ -31,10 +31,54 @@
 	.koop{
 		font-size: 8vw!important;
 	}
+	
+	.menu-text{
+		margin-top: -6vh!important;
+	}
+	
+	.menu-text h3{
+		font-size: 8vw!important;
+		padding-bottom: 5vh!important;
+	}
+}
+
+.menu{
+	z-index: 2;
 }
 
 .fp-slidesNav{
 	text-align: center;
+}
+
+.menu-page{
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0,0,0,0.7);
+	display: none;
+}
+
+.menu-text{
+	position: absolute;
+	height: 100vh;
+	width: 100vw;
+	top: 50;
+	left: 50;
+	transform: translateY(50%);
+	margin-top: -10vh;
+}
+
+.menu-text h3{
+	color: white;
+	font-family: caviar;
+	font-size: 5vw;
+	margin: 0;
+	padding-bottom: 8vh;
+	text-align: center;
+}
+
+.menu-text a{
+	text-decoration: none;
 }
 
 #header{
@@ -96,6 +140,10 @@
 	padding-top: 20vh;
 	display: inline-block;
 	margin-bottom: 8vh;
+}
+
+.height-fix{
+	max-width: 40vw;
 }
 
 .koop-container{
