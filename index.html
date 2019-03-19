@@ -23,9 +23,16 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script>
 		var i = 0;
+		var x = 0;
+		var basket = "Ik wens de volgende koeken te bestellen: \n";
 		
 		function alerting(){
-			alert('deze functie werkt nog niet, stuur in tussen tijd een berichtje naar 0470 55 55 05 met de gewenste koeken :)')
+			alert('deze functie werkt nog niet, stuur in tussen tijd een berichtje naar 0470 55 55 05 met de gewenste koeken :)');
+		}
+		
+		function add_to_basket(item, amount){
+			basket += amount + " van " + item + "\n";
+			alert(basket);
 		}
 		
 		function menu(){
@@ -39,6 +46,20 @@
 				$(".menu").attr("src", "img/menu.png");
 				i = 0;
 			}
+		}
+		
+		function greyscale(item){
+			if(x === 0){
+				$('.greyscale').fadeIn(500);
+				x = 1;
+			}
+			else if(x === 1){
+				$('.greyscale').fadeOut(500);
+				x = 0;
+			}
+			
+			add_to_basket('Plop koeken', '2')
+			
 		}
 	</script>
 </head>
@@ -54,6 +75,12 @@
 					<a onClick="alerting()" href="#"><h3>Contact</h3></a>
 					<a onClick="alerting()" href="#"><h3>Help!</h3></a>
 				</div>
+			</div>
+		</div>
+		<div class="greyscale" onClick="greyscale()">
+			<div class="popup-amount">
+				<p>Hoeveel wilt u hiervan bestellen?</p>
+				<input type="text" name="amount">
 			</div>
 		</div>
 		<div class="fp-section" id="section0">
@@ -119,7 +146,7 @@
 			</div>
 			<div class="fp-slide slide7">
 				<h3 class="title">Dinosaurus Koeken<br />per pak</h3>
-				<h3 class="price">€2,30</h3>
+				<h3 class="price">€2,50</h3>
 				<div class="image-container">
 					<img class="artikel" src="img/dino.png" alt="Dinosaurus Koeken" />
 				</div>
@@ -139,7 +166,7 @@
 			</div>
 			<div class="fp-slide slide9">
 				<h3 class="title">Lulu Beertje<br />Aardbeien<br />per pak</h3>
-				<h3 class="price">€2,00</h3>
+				<h3 class="price">€2,40</h3>
 				<div class="image-container">
 					<img class="artikel" src="img/lulu.png" alt="Lulu Beertje Aardbeien" />
 				</div>
@@ -149,9 +176,29 @@
 			</div>
 			<div class="fp-slide slide10">
 				<h3 class="title">Lulu Beertje<br />Melk<br />per pak</h3>
-				<h3 class="price">€2,00</h3>
+				<h3 class="price">€2,40</h3>
 				<div class="image-container">
 					<img class="artikel" src="img/lulu_choc.png" alt="Lulu Beertje Melk" />
+				</div>
+				<div class="koop-container">
+					<a class="koop" onclick="alerting()" href="#">Koop nu!</a>
+				</div>
+			</div>
+			<div class="fp-slide slide11">
+				<h3 class="title">Snickers</h3>
+				<h3 class="price">€1,40</h3>
+				<div class="image-container">
+					<img class="artikel" src="img/snickers.png" alt="Snickers" />
+				</div>
+				<div class="koop-container">
+					<a class="koop" onclick="alerting()" href="#">Koop nu!</a>
+				</div>
+			</div>
+			<div class="fp-slide slide12">
+				<h3 class="title">Bueno</h3>
+				<h3 class="price">€2,00</h3>
+				<div class="image-container">
+					<img class="artikel" src="img/bueno.png" alt="Bueno" />
 				</div>
 				<div class="koop-container">
 					<a class="koop" onclick="alerting()" href="#">Koop nu!</a>

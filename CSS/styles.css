@@ -170,6 +170,34 @@
 	
 }
 
+.greyscale{
+	position: absolute;
+	z-index: 2;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0,0,0,0.70);
+	display: none;
+}
+
+.popup-amount{
+	position: fixed;
+	z-index: 3;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #5f27cd;
+	padding: 10px;
+	font-family: caviar;
+	color: white;
+	text-align: center;
+}
+
+.popup-amount input{
+	border: 1px solid white;
+	border-radius: 3px;
+	width: 2vw;
+}
+
 #section0{
 }
 
@@ -202,6 +230,13 @@
 }
 .slide10{
 	background-color: #fab1a0;
+}
+.slide11{
+	background-color: #ff6b6b;
+}
+
+.slide12{
+	background-color: #10ac84;
 }
 
 
